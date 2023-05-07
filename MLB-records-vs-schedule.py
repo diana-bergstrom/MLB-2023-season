@@ -12,6 +12,7 @@ my_data['path'] = '/kaggle/input/mlbteamlogos/' + my_data['Tm'] + '.png'
 my_data = my_data.drop(my_data[my_data['Tm'] == 'Average'].index)
 
 # create plot
+
 fig, ax = plt.subplots(figsize=(20,20))
 sns.set(font_scale = 2)
 sns.scatterplot(x=my_data['SOS'],
@@ -51,6 +52,12 @@ ax.annotate('winning team with easy schedule', xy=(-0.75, 0.3), xytext=(-0.75, 0
 
 ax.annotate('winning team with hard schedule', xy=(0.82, 0.3), xytext=(0.53, 0.82),
             fontsize=16, color='gray', alpha=1)
+
+# note that the Reds are directly behind the Nationals
+text = 'Cincinnati Reds\nbehind\nWashington Nationals'
+ax.annotate(text, xy=(0.41, 0.39), xytext=(0.45, 0.35),
+                  arrowprops=dict(facecolor='gray', shrink=0.05),
+                  fontsize=16, color='gray', alpha=1, ha='left', va='center')
 
 # create a new variable for each row of data called ‘ab’
 # ab uses the AnnotationBbox function from matplotlib assign an x/y location to each image
