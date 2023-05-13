@@ -2,7 +2,7 @@
 A personal project I created to develop my Python coding skills inspired by my interest in baseball statistics. Utilized pandas, matplotlib.pyplot, matplotlib.offsetbox, and seaborn.
 
 ### Data
-Data for MLB standings and strength of schecules obtained from [baseball reference](https://www.baseball-reference.com/leagues/MLB-standings.shtml).
+Data for MLB standings, strength of schecules, and win% obtained from [baseball reference](https://www.baseball-reference.com/leagues/MLB-standings.shtml).
 
 ### Skills used
 * df.drop()
