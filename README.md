@@ -52,4 +52,4 @@ Created visualizations to plot MLB teams winning % vs. strength of schedule on t
 ### MLB Win% vs Opposing Team Records
 Created a visualization to plot each MLB team's win% against teams with winning and losing records through May 12 for the 2023 season.
 
-![MLB Win% vs Teams Above and Below Average Records (1)](https://github.com/diana-bergstrom/MLB-2023-season/assets/114450141/d7bbc68d-1fe9-485a-89ec-54951836a4a1)
+![MLB_Win% vs Teams Above and Below Average Records](https://github.com/diana-bergstrom/MLB-2023-season/assets/114450141/b13f0b2a-7085-4ccb-a25a-ccb511121ee5)
