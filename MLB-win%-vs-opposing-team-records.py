@@ -36,9 +36,17 @@ my_data['Tm'] = my_data['Tm'].astype(str)
 # create plot
 fig, ax = plt.subplots(figsize=(20, 20))
 sns.set(font_scale = 2)
+sns.set_style("white")
 sns.scatterplot(x=my_data['win%_below_500'],
                 y=my_data['win%_above_500'],
                 ax=ax)
+
+# remove gridlines
+sns.despine()
+
+# remove lines from both axes
+for spine in ax.spines.values():
+    spine.set_edgecolor("none")
 
 # figure title
 ax.set_title('Win% against >=.500 teams vs. <.500 teams',size=34)
@@ -65,20 +73,6 @@ ax.annotate('above average vs. good teams\nbelow average vs. bad teams', xy=(0.2
 
 ax.annotate('above average vs. everyone', xy=(0.765, 0.664), xytext=(0.765, 0.664),
             fontsize=16, color='green', alpha=1)
-
-# add a solid black border
-for spine in ax.spines.values():
-    spine.set_edgecolor('black')
-    spine.set_linewidth(2)
-
-# set the facecolor to white
-ax.set_facecolor('white')
-
-# turn on gridlines
-ax.grid(True)
-
-# set the color of the gridlines
-ax.grid(color='gray', linestyle='--', linewidth=1, alpha=0.5)
 
 # plot team logo images
 def getImage(path):
